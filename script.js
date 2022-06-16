@@ -1,6 +1,9 @@
+let htmlShow = document.querySelector('html-show');
+
 
 for ( let index = 1; index <= 100 ; index++) {
     
+     
 
     if (index % 3 == 0 && index % 5 == 0) {
         console.log('FizzBuzz');
@@ -14,6 +17,14 @@ for ( let index = 1; index <= 100 ; index++) {
     } else {
         console.log(index);
     }
+
+    
+    const toAppend;
+    toAppend.innerHTML = index;
+
+    htmlShow.append(toAppend);
+
+
    
 }
 
