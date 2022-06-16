@@ -1,5 +1,3 @@
-let htmlShow = document.querySelector('html-show');
-
 
 for ( let index = 1; index <= 100 ; index++) {
     
@@ -18,13 +16,11 @@ for ( let index = 1; index <= 100 ; index++) {
         console.log(index);
     }
 
-    
-    const toAppend;
-    toAppend.innerHTML = index;
-
-    htmlShow.append(toAppend);
-
-
+   
+    let htmlShow = document.querySelector('html-show');
+    let iToAppend = document.createElement('span');
+    iToAppend.innerHTML = index;
+    htmlShow.append(iToAppend);
    
 }
 
