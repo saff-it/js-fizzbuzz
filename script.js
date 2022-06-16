@@ -1,3 +1,4 @@
+const rowShow = document.getElementById('html-show')
 
 for ( let index = 1; index <= 100 ; index++) {
     
@@ -16,11 +17,14 @@ for ( let index = 1; index <= 100 ; index++) {
         console.log(index);
     }
 
+    const showIndex = document.createElement('div');
+    showIndex.classList.add('col-2');
+    showIndex.innerHTML = index;
+
+
+    rowShow.append(showIndex);
+    
    
-    let htmlShow = document.querySelector('html-show');
-    let iToAppend = document.createElement('span');
-    iToAppend.innerHTML = index;
-    htmlShow.append(iToAppend);
    
 }
 
